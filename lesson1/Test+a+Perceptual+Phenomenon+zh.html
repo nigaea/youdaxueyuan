@@ -11811,8 +11811,11 @@ div#notebook {
 <p>背景:
 此实验展示了人对事物的感知过程。当有符合经验的事物出现时，大脑能很快做出判断；反之，若违背经验的事物出现时，大脑会经过加工修正处理后对事物进行判断,反应时间加长。</p>
 <p>零假设H0：文字特征和原来相同和不同,不会影响人的认知.
-对立假设H1：文字特征和原来相同和不同,会影响人的认知.
-本零假设就意味着T(Congruent)-T(Incongruent)=0,在一定系统误差内,相同不同文字特征所回答出的时间相等.
+对立假设Ha：文字特征和原来相同和不同,会影响人的认知.
+𝞵(Congruent):代表文字特征和原来相同时,认知时间的总体均值
+𝞵(Incongruent):代表文字特征和原来不相同时,认知时间的总体均值
+H0:𝞵(Congruent)-𝞵(Incongruent)=0,在一定系统误差内,相同不同文字特征所回答出的时间相等.
+Ha:𝞵(Congruent)-𝞵(Incongruent)!=0
 预先设定的检验水准为0.05，记作α，通常取α=0.05</p>
 <p>统计检验类型:配对t检验
 选择理由:抽样样本量小于30,样本数量比较小,总体方差未知.</p>
@@ -12184,11 +12187,11 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>配对t检验
-置信区间百分比95%,配对T检验,自由度n=23
+置信水平95%,自由度n=23
 t=-8.02070694411
 p=4.10300058571e-08
 𝞵(Congruent-Incongruent)=-7.96479166667
-按照H0的假设,𝞵(Congruent-Incongruent)应该为0.p值为4.10300058571e-08,显著性水平远远小于0.05,也就是说明是小概率事件.小概率事件不可能在一次试验中出现.从而拒绝原假设.
+按照H0的假设,𝞵(Congruent-Incongruent)应该为0.P值为4.10300058571e-08,P小于0.05,也就是说明是小概率事件.小概率事件在一次试验中出现概率很小.从而拒绝原假设.
 结论:文字特征和原来相同和不同,会影响人的认知时间.</p>
 
 </div>
@@ -12205,6 +12208,8 @@ p=4.10300058571e-08
 <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">jikexueyuan</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">course</span><span class="o">/</span><span class="mi">2382</span><span class="n">_1</span><span class="o">.</span><span class="n">html</span><span class="err">?</span><span class="n">ss</span><span class="o">=</span><span class="mi">1</span>
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">segmentfault</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">q</span><span class="o">/</span><span class="mi">1010000009010179</span>
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docs</span><span class="o">.</span><span class="n">scipy</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">scipy</span><span class="o">-</span><span class="mf">0.14</span><span class="o">.</span><span class="mi">0</span><span class="o">/</span><span class="n">reference</span><span class="o">/</span><span class="n">generated</span><span class="o">/</span><span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">ttest_rel</span><span class="o">.</span><span class="n">html</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">statsdirect</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">help</span><span class="o">/</span><span class="n">parametric_methods</span><span class="o">/</span><span class="n">paired_t</span><span class="o">.</span><span class="n">htm</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">support</span><span class="o">.</span><span class="n">minitab</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">zh</span><span class="o">-</span><span class="n">cn</span><span class="o">/</span><span class="n">minitab</span><span class="o">/</span><span class="mi">18</span><span class="o">/</span><span class="n">help</span><span class="o">-</span><span class="ow">and</span><span class="o">-</span><span class="n">how</span><span class="o">-</span><span class="n">to</span><span class="o">/</span><span class="n">statistics</span><span class="o">/</span><span class="n">basic</span><span class="o">-</span><span class="n">statistics</span><span class="o">/</span><span class="n">supporting</span><span class="o">-</span><span class="n">topics</span><span class="o">/</span><span class="n">basics</span><span class="o">/</span><span class="n">what</span><span class="o">-</span><span class="ow">is</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">hypothesis</span><span class="o">-</span><span class="n">test</span><span class="o">/</span>
 </pre></div>
 
 </div>
