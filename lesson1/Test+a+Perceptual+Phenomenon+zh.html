@@ -11804,25 +11804,36 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>背景:
-此实验展示了人对事物的感知过程。当有符合经验的事物出现时，大脑能很快做出判断；反之，若违背经验的事物出现时，大脑会经过加工修正处理后对事物进行判断,反应时间加长。</p>
-<p>零假设H0：文字特征和原来相同和不同,不会影响人的认知.
-对立假设Ha：文字特征和原来相同和不同,会影响人的认知.
-𝞵(Congruent):代表文字特征和原来相同时,认知时间的总体均值
-𝞵(Incongruent):代表文字特征和原来不相同时,认知时间的总体均值
-H0:𝞵(Congruent)-𝞵(Incongruent)=0,在一定系统误差内,相同不同文字特征所回答出的时间相等.
-Ha:𝞵(Congruent)-𝞵(Incongruent)!=0
-预先设定的检验水准为0.05，记作α，通常取α=0.05</p>
-<p>统计检验类型:配对t检验
-选择理由:两样本是配对的，而且抽样样本量小于30,样本数量比较小,总体方差未知，抽样结果相近正太分布.
-Q2b问题回复：要比较的数据必须是计量数据而非计数数据，组别为2组，2组以上则是做方差分析。t检验通常需要做一个方差齐性检验。亦称student t检验（Student's t test），主要用于样本含量较小（例如n&lt;30），总体标准差σ未知的正态分布资料。</p>
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">背景</span><span class="p">:</span>
+<span class="n">此实验展示了人对事物的感知过程</span><span class="err">。</span><span class="n">当有符合经验的事物出现时</span><span class="err">，</span><span class="n">大脑能很快做出判断</span><span class="err">；</span><span class="n">反之</span><span class="err">，</span><span class="n">若违背经验的事物出现时</span><span class="err">，</span><span class="n">大脑会经过加工修正处理后对事物进行判断</span><span class="p">,</span><span class="n">反应时间加长</span><span class="err">。</span>
+
+<span class="n">零假设H0</span><span class="err">：</span><span class="n">文字特征和原来相同和不同</span><span class="p">,</span><span class="n">不会影响人的认知</span><span class="o">.</span>
+<span class="n">对立假设Ha</span><span class="err">：</span><span class="n">文字特征和原来相同和不同</span><span class="p">,</span><span class="n">会影响人的认知</span><span class="o">.</span>
+<span class="n">𝞵</span><span class="p">(</span><span class="n">Congruent</span><span class="p">):</span><span class="n">代表文字特征和原来相同时</span><span class="p">,</span><span class="n">认知时间的总体均值</span>
+<span class="n">𝞵</span><span class="p">(</span><span class="n">Incongruent</span><span class="p">):</span><span class="n">代表文字特征和原来不相同时</span><span class="p">,</span><span class="n">认知时间的总体均值</span>
+<span class="n">H0</span><span class="p">:</span><span class="n">𝞵</span><span class="p">(</span><span class="n">Congruent</span><span class="p">)</span><span class="o">-</span><span class="n">𝞵</span><span class="p">(</span><span class="n">Incongruent</span><span class="p">)</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">在一定系统误差内</span><span class="p">,</span><span class="n">相同不同文字特征所回答出的时间相等</span><span class="o">.</span>
+<span class="n">Ha</span><span class="p">:</span><span class="n">𝞵</span><span class="p">(</span><span class="n">Congruent</span><span class="p">)</span><span class="o">-</span><span class="n">𝞵</span><span class="p">(</span><span class="n">Incongruent</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span>
+<span class="n">预先设定的检验水准为0</span><span class="o">.</span><span class="mi">05</span><span class="err">，</span><span class="n">记作α</span><span class="err">，</span><span class="n">通常取α</span><span class="o">=</span><span class="mf">0.05</span>
+
+<span class="n">统计检验类型的选择</span><span class="p">:</span>
+<span class="mi">1</span><span class="err">、</span><span class="n">两个样本数据</span><span class="err">，</span><span class="n">并不知道总体的统计量</span><span class="err">（</span><span class="n">均值</span><span class="err">、</span><span class="n">标准偏差等</span><span class="err">），</span><span class="n">并且样本量只有24</span><span class="err">（</span><span class="n">小于30</span><span class="err">），</span><span class="n">无法进行Z检验</span><span class="err">，</span><span class="n">故而考虑t检验</span>
+<span class="mi">2</span><span class="err">、</span><span class="n">比对t检验的前提条件</span><span class="err">：</span> 
+<span class="err">（</span><span class="mi">1</span><span class="err">）</span><span class="n">受试者是从人群中被随机挑选的</span><span class="err">，</span><span class="n">并没有限制条件</span><span class="err">，</span><span class="n">故而实验样本是随机样本</span><span class="err">；</span> 
+<span class="err">（</span><span class="mi">2</span><span class="err">）</span><span class="n">经过对两个样本的分析</span><span class="err">，</span><span class="n">其均表现出类似正态分布</span><span class="err">。</span><span class="n">且样本为随机样本</span><span class="err">，</span><span class="n">故可以合理推测其总体是正态分布</span>
+<span class="mi">3</span><span class="err">、</span><span class="n">这个实验下每名参与者都有两个情况</span><span class="err">（</span><span class="n">颜色与文字相同和不同</span><span class="err">）</span><span class="n">下的测试时间</span><span class="err">，</span><span class="n">这两个测试时间可能都受到这名参与者本身正常的反应时间影响</span><span class="err">，</span><span class="n">所以这两组样本属于相关样本</span><span class="err">。</span>
+<span class="mi">4</span><span class="err">、</span><span class="n">配对t检验只关注每对相关数据的差值</span><span class="p">(</span><span class="n">c</span><span class="o">-</span><span class="n">i</span><span class="p">)</span><span class="err">，</span><span class="n">从而避免得到的结论受到参与人员间正常反应时间独立性的影响</span><span class="err">。</span>
+<span class="n">所以这里选择统计检验类型为配对样本T检验</span><span class="err">。</span>
+</pre></div>
 
 </div>
 </div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
